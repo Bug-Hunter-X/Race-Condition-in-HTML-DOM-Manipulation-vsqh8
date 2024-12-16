@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be displayed initially.
+  </div>
+  <script>
+    // Incorrectly attempting to access the div before it's loaded
+    document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
